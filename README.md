@@ -1,7 +1,16 @@
 # springbootmicroservices
 springbootmicroservicesapis
 
-Required Java 17
+**Zipkin server details**
+The quickest way to get started is to fetch the latest released server as a self-contained executable jar. Note that the Zipkin server requires minimum JRE 8. For example:
+
+curl -sSL https://zipkin.io/quickstart.sh | bash -s
+java -jar zipkin.jar
+
+You can also start Zipkin via Docker.(make sure Docker desktop is intalled in local)
+docker run -d -p 9411:9411 openzipkin/zipkin
+
+**Required Java 17**
 
 **Note: for API-GATEWAY service**
 
